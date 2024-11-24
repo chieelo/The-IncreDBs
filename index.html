@@ -73,8 +73,6 @@
             color: #fff;
             text-align: center;
             padding: 5px;
-            position: fixed;
-            bottom: 0;
             width: 100%;
         }
 
@@ -156,6 +154,27 @@
             margin-bottom: 30px;
         }
 
+        .buttons {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+            width: 220px;
+        }
+        .buttons a {
+            display: inline-block;
+            padding: 10px;
+            background-color: #004d26;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+             font-family: verdana, sans-serif;
+/*            /font-weight: bold;*/
+        }
+        .buttons a:hover {
+            background-color: #006b35;
+        }
+
+
         /* Ensure the image fits well on different screen sizes */
         .container2 img {
             max-width: 70%; 
@@ -179,6 +198,16 @@
 
             .container2 img {
                 width: 80%; 
+            }
+
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .buttons a {
+                margin-bottom: 10px;
+                width: 80%;
+                text-align: center;
             }
         }
 
@@ -245,16 +274,17 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home"><img src="SIR CHIEF’S (5).png" class="logo" alt="Logo"></a></li>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-                <li><a href="#shop">SHOP</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"><img src="SIR CHIEF’S (5).png" class="logo" alt="Logo"></a></li>
+            <li><a href="about.html" style="color: indianred;">ABOUT US</a></li> <!-- Updated link -->
+            <li><a href="#about">SERVICES</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#shop">SHOP</a></li>
+        </ul>
+    </nav>
+</header>
+
 
     <section id="home">
         <h1 style="margin-top: 120px;">WELCOME TO SIR CHIEF'S MOTORSHOP</h1>
@@ -285,11 +315,13 @@
         <center>
         <h2 style="font-family: times; font-size: 170%;letter-spacing: 1; margin-bottom: 0px;">VISIT OUR STORE</h2>
         <p style="font-size: 120%; padding-bottom: 10px;">Come and visit Sir Chief's Motorshop to experience our exceptional services and explore our extensive range of motorcycle products and accessories. Book your visit today!</p>
-        <p style="padding-bottom: 10px; background-color:#014235; color: #fff; text-align: center; display: flex; justify-content: center; align-items: center; height: 45px; width: 250px">SCHEDULE YOUR VISIT
-</p>
+        <div class="buttons">
+            <a href="#">Book Your Visit</a>
+        </div>
 
     </center>
     </div>
+    
     <div class="container2">
         <br>
         <img src="f4a201bb4eab82b51dca174e85149311.jpg" alt="Store Image" />
